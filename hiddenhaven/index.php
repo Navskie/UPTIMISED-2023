@@ -13,9 +13,9 @@
             $id = $data['id'];
         ?>
         <figure>
-            <img class="img-section" src="https://i.postimg.cc/zvhYBcht/bora-bora.jpg" alt="" />
+            <img class="img-section" src="../system/admin/images/<?php echo $data['product_img'] ?>" alt="" />
             <div class="text-sec">
-                <h1><?php echo $data['product_title'] ?></h1>
+                <h2><?php echo $data['product_title'] ?></h2>
                 <br>
                 <p>
                   <?php echo $data['product_desc'] ?>

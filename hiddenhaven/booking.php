@@ -44,7 +44,7 @@
   <br>
   <div class="row">
     <div class="col-4" style="border-right: 1px solid #333">
-      <img class="img-section" src="https://i.postimg.cc/zvhYBcht/bora-bora.jpg" alt="" /> <br><br>
+      <img class="img-section" src="../system/admin/images/<?php echo $product_fetch['product_img'] ?>" alt="" /> <br><br>
       <h2 class="text-center"><?php echo $product_fetch['product_title'] ?></h2> <br>
       <h1 class="text-center font-weight-bold">
         <?php
@@ -128,7 +128,7 @@
         ?>
       </h1>
       <br>
-      <span style="font-size: 18px">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam explicabo ullam porro animi adipisci repudiandae deleniti cupiditate ab recusandae, vitae inventore veniam beatae necessitatibus error molestiae id. Dolores, corporis recusandae?</span>
+      <span style="font-size: 18px"><?php echo $product_fetch['product_desc'] ?></span>
     </div>
     <div class="col-8">
       <?php
@@ -311,7 +311,7 @@
               <label for="" style="font-size: 15px">Time Slot</label>
               <select name="timeslot" id="" class="form-control" style="border: 1px solid #000; border-radius: 0; padding: 12px 15px; font-size: 12px">
                 <option value="">Select Time Slot</option>
-                <option value="Full Stay - Daytime (9am to 6am)">Full Stay - Daytime (9am to 6am)</option>
+                <option value="Full Stay - Daytime (9am to 7am)">Full Stay - Daytime (9am to 7am)</option>
                 <option value="Full Stay - Nighttime (9pm to 6pm)">Full Stay - Nighttime (9pm to 6pm)</option>
                 <option value="Full Stay - Daytime">Full Stay - Daytime</option>
                 <option value="Full Stay - Nighttime">Full Stay - Nighttime</option>
@@ -354,7 +354,7 @@
               <label for="" style="font-size: 15px">Time Slot</label>
               <select name="timeslot" id="" class="form-control" style="border: 1px solid #000; border-radius: 0; padding: 12px 15px; font-size: 12px">
                 <option value="">Select Time Slot</option>
-                <option value="Full Stay - Daytime (9am to 6am)">Full Stay - Daytime (9am to 6am)</option>
+                <option value="Full Stay - Daytime (9am to 7am)">Full Stay - Daytime (9am to 7am)</option>
                 <option value="Full Stay - Nighttime (9pm to 6pm)">Full Stay - Nighttime (9pm to 6pm)</option>
                 <option value="Full Stay - Daytime">Full Stay - Daytime</option>
                 <option value="Full Stay - Nighttime">Full Stay - Nighttime</option>

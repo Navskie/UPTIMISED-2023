@@ -17,11 +17,11 @@
 
     .href {
       font-family: 'Roboto', sans-serif;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: bold;
       background: #1E90FF;
       width: 200px;
-      padding: 20px;
+      padding: 15px;
       text-align:center;
       text-decoration: none;
       text-transform: uppercase;
