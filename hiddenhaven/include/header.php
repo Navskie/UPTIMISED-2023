@@ -15,10 +15,12 @@
     </div>
     <div class="container">
     <header class="header">
+        <a href="index.php">
         <img
             src="logo.png"
             class="logo"
         />
+        </a>
 
         <nav class="barnav">
             <ul class="navbar-list">
