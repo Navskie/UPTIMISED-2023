@@ -40,6 +40,7 @@
     $pax_total = $pax_fetchs['details_pax'];
     $det_time = $pax_fetchs['details_time'];
     $days_stay = $pax_fetchs['details_days'];
+    $days_amount = $pax_fetchs['details_amount'];
   }
 ?>
   <br>
@@ -77,46 +78,16 @@
           <?php
             if ($days_stay == '') {
           ?>
-          <div class="row">
-            <div class="col-6">
-              <div style="border-radius: 10px; border: #f3f3f3 1px solid; padding: 10px 0">
-                <h5 class="text-center">WEEKDAYS</h5>
-                <h3 class="text-center">
-                  <?php echo $product_fetch['product_weekdays'] ?>
-                </h3>
-              </div>
-            </div>
-            <div class="col-6">
-              <div style="border-radius: 10px; border: #f3f3f3 1px solid; padding: 10px 0">
-                <h5 class="text-center">WEEKENDS</h5>
-                <h3 class="text-center">
-                  <?php echo $product_fetch['product_weekends'] ?>
-                </h3>
-              </div>
-            </div>
-          </div>
+
           <?php
-            } elseif ($days_stay == 'Weekends') {
+            } else {
           ?>
           <div class="row">
             <div class="col-12">
               <div style="border-radius: 10px; border: #f3f3f3 1px solid; padding: 10px 0">
-                <h5 class="text-center">WEEKENDS</h5>
+                <h5 class="text-center"></h5>
                 <h3 class="text-center">
-                  <?php echo $product_fetch['product_weekends'] ?>
-                </h3>
-              </div>
-            </div>
-          </div>
-          <?php
-            } elseif ($days_stay == 'Weekdays') {
-          ?>
-          <div class="row">
-            <div class="col-12">
-              <div style="border-radius: 10px; border: #f3f3f3 1px solid; padding: 10px 0">
-                <h5 class="text-center">WEEKDAYS</h5>
-                <h3 class="text-center">
-                  <?php echo $product_fetch['product_weekdays'] ?>
+                  <?php echo $pax_fetchs['details_amount'] ?>
                 </h3>
               </div>
             </div>
@@ -312,8 +283,8 @@
               <label for="" style="font-size: 15px">Time Slot</label>
               <select name="timeslot" id="" class="form-control" style="border: 1px solid #000; border-radius: 0; padding: 12px 15px; font-size: 12px">
                 <option value="">Select Time Slot</option>
-                <option value="Sunrise - Daytime (9am to 7am)">Sunrise - Daytime (9am to 7am)</option>
-                <option value="Sunset - Nighttime (9pm to 6pm)">Sunset - Nighttime (9pm to 6pm)</option>
+                <option value="Sunrise - Daytime (9am to 6pm)">Sunrise - Daytime (9am to 6pm)</option>
+                <option value="Sunset - Nighttime (9pm to 6am)">Sunset - Nighttime (9pm to 6am)</option>
                 <option value="Full Stay - Daytime">Full Stay - Daytime</option>
                 <option value="Full Stay - Nighttime">Full Stay - Nighttime</option>
               </select>
@@ -354,9 +325,9 @@
             <div class="col-4">
               <label for="" style="font-size: 15px">Time Slot</label>
               <select name="timeslot" id="" class="form-control" style="border: 1px solid #000; border-radius: 0; padding: 12px 15px; font-size: 12px">
-                <option value="">Select Time Slot</option>
-                <option value="Sunrise - Daytime (9am to 7am)">Sunrise - Daytime (9am to 7am)</option>
-                <option value="Sunset - Nighttime (9pm to 6pm)">Sunset - Nighttime (9pm to 6pm)</option>
+                <option value="<?php echo $booking_fetch['details_time'] ?>"><?php echo $booking_fetch['details_time'] ?></option>
+                <option value="Sunrise - Daytime (9am to 6pm)">Sunrise - Daytime (9am to 6pm)</option>
+                <option value="Sunset - Nighttime (9pm to 6am)">Sunset - Nighttime (9pm to 6am)</option>
                 <option value="Full Stay - Daytime">Full Stay - Daytime</option>
                 <option value="Full Stay - Nighttime">Full Stay - Nighttime</option>
               </select>

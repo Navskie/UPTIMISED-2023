@@ -28,22 +28,38 @@
     $contact = $_POST['contact'];
 
     
-    if ($days == 'Weekdays' && $time == 'Sunrise - Daytime (9am to 7am)') {
+    if ($days == 'Weekdays' && $time == 'Sunrise - Daytime (9am to 6pm)') {
+
       $amount = 4200;
-    } elseif (($days == 'Weekends' && $time == 'Sunrise - Daytime (9am to 7am)')) {
+
+    } elseif (($days == 'Weekends' && $time == 'Sunrise - Daytime (9am to 6pm)')) {
+
       $amount = 4700;
-    } elseif (($days == 'Weekdays' && $time == 'Sunset - Daytime (9pm to 6am)')) {
+
+    } elseif (($days == 'Weekdays' && $time == 'Sunset - Nighttime (9pm to 6am)')) {
+
       $amount = 4700;
-    } elseif (($days == 'Weekends' && $time == 'Sunset - Daytime (9pm to 6am)')) {
+
+    } elseif (($days == 'Weekends' && $time == 'Sunset - Nighttime (9pm to 6am)')) {
+
       $amount = 5200;
+
     } elseif (($days == 'Weekdays' && $time == 'Full Stay - Daytime')) {
+
       $amount = 6500;
+
     } elseif (($days == 'Weekends' && $time == 'Full Stay - Daytime')) {
+
       $amount = 7500;
+
     } elseif (($days == 'Weekdays' && $time == 'Full Stay - Nighttime')) {
+
       $amount = 6500;
+
     } elseif (($days == 'Weekends' && $time == 'Full Stay - Nighttime')) {
+
       $amount = 7500;
+
     }
 
     if ($pax >= 5) {
@@ -92,25 +108,43 @@
     $days = $_POST['days'];
     // echo '<br>';
     $contact = $_POST['contact'];
-
+    
         
-    if ($days == 'Weekdays' && $time == 'Sunrise - Daytime (9am to 7am)') {
+    if ($days == 'Weekdays' && $time == 'Sunrise - Daytime (9am to 6pm)') {
+
       $amount = 4200;
-    } elseif (($days == 'Weekends' && $time == 'Sunrise - Daytime (9am to 7am)')) {
+
+    } elseif (($days == 'Weekends' && $time == 'Sunrise - Daytime (9am to 6pm)')) {
+
       $amount = 4700;
-    } elseif (($days == 'Weekdays' && $time == 'Sunset - Daytime (9pm to 6am)')) {
+
+    } elseif (($days == 'Weekdays' && $time == 'Sunset - Nighttime (9pm to 6am)')) {
+
       $amount = 4700;
-    } elseif (($days == 'Weekends' && $time == 'Sunset - Daytime (9pm to 6am)')) {
+
+    } elseif (($days == 'Weekends' && $time == 'Sunset - Nighttime (9pm to 6am)')) {
+
       $amount = 5200;
+
     } elseif (($days == 'Weekdays' && $time == 'Full Stay - Daytime')) {
+
       $amount = 6500;
+
     } elseif (($days == 'Weekends' && $time == 'Full Stay - Daytime')) {
+
       $amount = 7500;
+
     } elseif (($days == 'Weekdays' && $time == 'Full Stay - Nighttime')) {
+
       $amount = 6500;
+
     } elseif (($days == 'Weekends' && $time == 'Full Stay - Nighttime')) {
+
       $amount = 7500;
+
     }
+
+    // echo $amount;
 
     if ($pax >= 5) {
       $sobra = $pax - 4;
@@ -125,7 +159,7 @@
     } else {
       $insert_name1 = mysqli_query($connect, "UPDATE haven_name SET pangalan = '$fname1' WHERE hh_code = '$poid'");
 
-      $details = mysqli_query($connect, "UPDATE haven_details SET
+      $details = "UPDATE haven_details SET
         details_time = '$time',
         details_pax = '$pax',
         details_days = '$days',
@@ -133,7 +167,8 @@
         details_contact = '$contact'
       WHERE 
         details_ref = '$poid'
-      ");
+      ";
+       $meeee = mysqli_query($connect, $details);
     }
     header('Location: booking.php?HHCode='.$HHcode.'');
   }
