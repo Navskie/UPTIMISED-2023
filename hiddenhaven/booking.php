@@ -313,8 +313,8 @@
                 <option value="">Select Time Slot</option>
                 <option value="Full Stay - Daytime (9am to 7am)">Full Stay - Daytime (9am to 7am)</option>
                 <option value="Full Stay - Nighttime (9pm to 6pm)">Full Stay - Nighttime (9pm to 6pm)</option>
-                <option value="Full Stay - Daytime">Full Stay - Daytime</option>
-                <option value="Full Stay - Nighttime">Full Stay - Nighttime</option>
+                <!-- <option value="Full Stay - Daytime">Full Stay - Daytime</option>
+                <option value="Full Stay - Nighttime">Full Stay - Nighttime</option> -->
               </select>
             </div>
             <div class="col-4">
@@ -356,8 +356,8 @@
                 <option value="">Select Time Slot</option>
                 <option value="Full Stay - Daytime (9am to 7am)">Full Stay - Daytime (9am to 7am)</option>
                 <option value="Full Stay - Nighttime (9pm to 6pm)">Full Stay - Nighttime (9pm to 6pm)</option>
-                <option value="Full Stay - Daytime">Full Stay - Daytime</option>
-                <option value="Full Stay - Nighttime">Full Stay - Nighttime</option>
+                <!-- <option value="Full Stay - Daytime">Full Stay - Daytime</option>
+                <option value="Full Stay - Nighttime">Full Stay - Nighttime</option> -->
               </select>
             </div>
             <div class="col-4">
