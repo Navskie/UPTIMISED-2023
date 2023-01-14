@@ -311,8 +311,8 @@
               <label for="" style="font-size: 15px">Time Slot</label>
               <select name="timeslot" id="" class="form-control" style="border: 1px solid #000; border-radius: 0; padding: 12px 15px; font-size: 12px">
                 <option value="">Select Time Slot</option>
-                <option value="Full Stay - Daytime (9am to 7am)">Full Stay - Daytime (9am to 7am)</option>
-                <option value="Full Stay - Nighttime (9pm to 6pm)">Full Stay - Nighttime (9pm to 6pm)</option>
+                <option value="Sunrise - Daytime (9am to 7am)">Sunrise - Daytime (9am to 7am)</option>
+                <option value="Sunset - Nighttime (9pm to 6pm)">Sunset - Nighttime (9pm to 6pm)</option>
                 <option value="Full Stay - Daytime">Full Stay - Daytime</option>
                 <option value="Full Stay - Nighttime">Full Stay - Nighttime</option>
               </select>
@@ -354,8 +354,8 @@
               <label for="" style="font-size: 15px">Time Slot</label>
               <select name="timeslot" id="" class="form-control" style="border: 1px solid #000; border-radius: 0; padding: 12px 15px; font-size: 12px">
                 <option value="">Select Time Slot</option>
-                <option value="Full Stay - Daytime (9am to 7am)">Full Stay - Daytime (9am to 7am)</option>
-                <option value="Full Stay - Nighttime (9pm to 6pm)">Full Stay - Nighttime (9pm to 6pm)</option>
+                <option value="Sunrise - Daytime (9am to 7am)">Sunrise - Daytime (9am to 7am)</option>
+                <option value="Sunset - Nighttime (9pm to 6pm)">Sunset - Nighttime (9pm to 6pm)</option>
                 <option value="Full Stay - Daytime">Full Stay - Daytime</option>
                 <option value="Full Stay - Nighttime">Full Stay - Nighttime</option>
               </select>
