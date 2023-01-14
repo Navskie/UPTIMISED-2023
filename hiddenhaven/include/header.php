@@ -29,7 +29,7 @@
             <li><a class="navbar-link" href="#">Gallery</a></li>
             <!-- <li><a class="navbar-link" href="#">Rewards</a></li> -->
             <li><a class="navbar-link" href="#">Contact Us</a></li>
-            <li><a class="navbar-link" href="../index.php">Uptimised</a></li>
+            <li><a class="navbar-link" href="../index.php">Return to Home Page</a></li>
             </ul>
         </nav>
 
