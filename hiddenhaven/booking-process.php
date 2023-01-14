@@ -58,7 +58,7 @@
       $insert_name1 = "INSERT INTO haven_name (hh_code, pangalan) VALUES ('$poid', '$fname1')";
       $insert_name1_qry = mysqli_query($connect, $insert_name1);
 
-      $details = "INSERT INTO haven_details (
+      echo $details = "INSERT INTO haven_details (
         details_code,
         details_ref,
         details_time,
@@ -75,10 +75,10 @@
         '$amount',
         '$contact'
       )";
-      $details_qry = mysqli_query($connect, $details);
+      // $details_qry = mysqli_query($connect, $details);
 
       // header('Location: booking.php?HHCode='.$HHcode.'');
-      echo '<script>alert("Information have been save successfully.");window.location.href = "booking.php?HHCode='.$HHcode.'";</script>';
+      // echo '<script>alert("Information have been save successfully.");window.location.href = "booking.php?HHCode='.$HHcode.'";</script>';
     }
 
   }
@@ -89,7 +89,7 @@
     $pax = $_POST['totalpax'];
     // echo '<br>';
     $fname1 = $_POST['fname1'];
-    echo $days = $_POST['days'];
+    $days = $_POST['days'];
     // echo '<br>';
     $contact = $_POST['contact'];
 
