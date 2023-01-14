@@ -34,7 +34,7 @@
                                 <tr>
                                   <th class="text-center">#</th>
                                   <th class="text-center">Title</th>
-                                  <th class="text-center">Description</th>
+                                  <!-- <th class="text-center">Description</th> -->
                                   <th class="text-center">Weekdays</th>
                                   <th class="text-center">Weekends</th>
                                   <th class="text-center">Code</th>
@@ -52,7 +52,6 @@
                                 <tr>
                                     <td class="text-center"><?php echo $number ?></td>
                                     <td class="text-center"><?php echo $data['product_title'] ?></td>
-                                    <td class="text-center"><?php echo $data['product_desc'] ?></td>
                                     <td class="text-center"><?php echo $data['product_weekdays'] ?></td>
                                     <td class="text-center"><?php echo $data['product_weekends'] ?></td>
                                     <td class="text-center"><?php echo $data['product_code'] ?></td>
