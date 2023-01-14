@@ -122,7 +122,7 @@
                             </ul> -->
                           </li>
                           <li class="parent dropdown"><a href="joinus.php">Join Us <i class="anm anm-angle-down-l"></i></a></li>
-                          <li class="parent dropdown"><a href="b4hidden.php">Hidden Haven<i class="anm anm-angle-down-l"></i></a></li>
+                          <li class="parent dropdown"><a href="b4hidden.php">StayCation<i class="anm anm-angle-down-l"></i></a></li>
                         </ul>
                       </nav>
                       <!--End Desktop Menu-->
@@ -280,7 +280,7 @@
             </ul>
           </li>
           </li>
-          <li class="lvl1 parent megamenu"><a href="b4hidden.php">Hidden Haven</a>
+          <li class="lvl1 parent megamenu"><a href="b4hidden.php">StayCation</a>
           </li>
         </ul>
       </div>
