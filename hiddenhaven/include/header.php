@@ -22,7 +22,7 @@
 
         <nav class="barnav">
             <ul class="navbar-list">
-            <li><a class="navbar-link" href="#">About Us</a></li>
+            <li><a class="navbar-link" href="aboutus.php">About Us</a></li>
             <li><a class="navbar-link" href="#">Offers</a></li>
             <li><a class="navbar-link" href="#">Gallery</a></li>
             <li><a class="navbar-link" href="#">Rewards</a></li>

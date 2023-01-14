@@ -20,23 +20,50 @@
   // echo '<br>';
   $details_amount_admin = $details_amount * 0.02;
 
-  $seller = mysqli_query($connect, "SELECT * FROM upti_reseller WHERE reseller_code = '$details_code'");
-  $seller_fetch = mysqli_fetch_array($seller);
+  $osr_sales = mysqli_query($connect, "SELECT * FROM upti_users WHERE users_code = '$details_code'");
+  $osr_sales_fetch = mysqli_fetch_array($osr_sales);
 
-  $reseller_earning = $seller_fetch['reseller_haven'];
+  if ($osr_sales_fetch['users_role'] == 'UPTIRESELLER') {
 
-  $new_reseller_earn = $reseller_earning + $details_amount_5;
+    $seller = mysqli_query($connect, "SELECT * FROM upti_reseller WHERE reseller_code = '$details_code'");
+    $seller_fetch = mysqli_fetch_array($seller);
+  
+    $reseller_earning = $seller_fetch['reseller_haven'];
 
-  $seller_update = mysqli_query($connect, "UPDATE upti_reseller SET reseller_haven = '$new_reseller_earn' WHERE reseller_code = '$details_code'");
+    $new_reseller_earn = $reseller_earning + $details_amount_5;
 
-  $admin = mysqli_query($connect, "SELECT * FROM main_wallet WHERE wallet_code = 'UPTIMAIN'");
-  $admin_fetch = mysqli_fetch_array($admin);
+    $seller_update = mysqli_query($connect, "UPDATE upti_reseller SET reseller_haven = '$new_reseller_earn' WHERE reseller_code = '$details_code'");
 
-  $admin_earning = $admin_fetch['wallet'];
+    $admin = mysqli_query($connect, "SELECT * FROM main_wallet WHERE wallet_code = 'UPTIMAIN'");
+    $admin_fetch = mysqli_fetch_array($admin);
 
-  $new_admin_wallet = $admin_earning + $details_amount_admin;
+    $admin_earning = $admin_fetch['wallet'];
 
-  $admin_update = mysqli_query($connect, "UPDATE main_wallet SET wallet = '$new_admin_wallet' WHERE wallet_code = 'UPTIMAIN'");
+    $new_admin_wallet = $admin_earning + $details_amount_admin;
+
+    $admin_update = mysqli_query($connect, "UPDATE main_wallet SET osc_wallet = '$new_admin_wallet' WHERE wallet_code = 'UPTIMAIN'");
+
+  } elseif ($osr_sales_fetch['users_role'] == 'UPTIOSR') {
+
+    $seller = mysqli_query($connect, "SELECT * FROM upti_osc_wallet WHERE osc_code = '$details_code'");
+    $seller_fetch = mysqli_fetch_array($seller);
+  
+    $reseller_earning = $seller_fetch['osc_wallet'];
+
+    $new_reseller_earn = $reseller_earning + $details_amount_5;
+
+    $seller_update = mysqli_query($connect, "UPDATE upti_osc_waller SET osc_wallet = '$new_reseller_earn' WHERE osc_code = '$details_code'");
+
+    $admin = mysqli_query($connect, "SELECT * FROM main_wallet WHERE wallet_code = 'UPTIMAIN'");
+    $admin_fetch = mysqli_fetch_array($admin);
+
+    $admin_earning = $admin_fetch['wallet'];
+
+    $new_admin_wallet = $admin_earning + $details_amount_admin;
+
+    $admin_update = mysqli_query($connect, "UPDATE main_wallet SET wallet = '$new_admin_wallet' WHERE wallet_code = 'UPTIMAIN'");
+
+  }
 
   // History
 
