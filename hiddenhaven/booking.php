@@ -38,6 +38,7 @@
   } else {
     $pax_fetchs = mysqli_fetch_array($pakpok);
     $pax_total = $pax_fetchs['details_pax'];
+    $det_time = $pax_fetchs['details_time'];
     $days_stay = $pax_fetchs['details_days'];
   }
 ?>

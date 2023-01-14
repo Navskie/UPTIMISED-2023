@@ -28,17 +28,28 @@
     $contact = $_POST['contact'];
 
     
-    if ($days == 'Weekdays') {
-      $amount = $amount_check_qry['product_weekdays'];
-    } else {
-      $amount = $amount_check_qry['product_weekends'];
+    if ($days == 'Weekdays' && $time == 'Sunrise - Daytime (9am to 7am)') {
+      $amount = 4200;
+    } elseif (($days == 'Weekends' && $time == 'Sunrise - Daytime (9am to 7am)')) {
+      $amount = 4700;
+    } elseif (($days == 'Weekdays' && $time == 'Sunset - Daytime (9pm to 6am)')) {
+      $amount = 4700;
+    } elseif (($days == 'Weekends' && $time == 'Sunset - Daytime (9pm to 6am)')) {
+      $amount = 5200;
+    } elseif (($days == 'Weekdays' && $time == 'Full Stay - Daytime')) {
+      $amount = 6500;
+    } elseif (($days == 'Weekends' && $time == 'Full Stay - Daytime')) {
+      $amount = 7500;
+    } elseif (($days == 'Weekdays' && $time == 'Full Stay - Nighttime')) {
+      $amount = 6500;
+    } elseif (($days == 'Weekends' && $time == 'Full Stay - Nighttime')) {
+      $amount = 7500;
     }
 
     if ($pax >= 5) {
       $sobra = $pax - 4;
       $subtotal = $sobra * 300;
       $amount = $amount + $subtotal;
-
     }
 
     if ($pax > 10) {
@@ -83,10 +94,22 @@
     $contact = $_POST['contact'];
 
         
-    if ($days == 'Weekdays') {
-      $amount = $amount_check_qry['product_weekdays'];
-    } else {
-      $amount = $amount_check_qry['product_weekends'];
+    if ($days == 'Weekdays' && $time == 'Sunrise - Daytime (9am to 7am)') {
+      $amount = 4200;
+    } elseif (($days == 'Weekends' && $time == 'Sunrise - Daytime (9am to 7am)')) {
+      $amount = 4700;
+    } elseif (($days == 'Weekdays' && $time == 'Sunset - Daytime (9pm to 6am)')) {
+      $amount = 4700;
+    } elseif (($days == 'Weekends' && $time == 'Sunset - Daytime (9pm to 6am)')) {
+      $amount = 5200;
+    } elseif (($days == 'Weekdays' && $time == 'Full Stay - Daytime')) {
+      $amount = 6500;
+    } elseif (($days == 'Weekends' && $time == 'Full Stay - Daytime')) {
+      $amount = 7500;
+    } elseif (($days == 'Weekdays' && $time == 'Full Stay - Nighttime')) {
+      $amount = 6500;
+    } elseif (($days == 'Weekends' && $time == 'Full Stay - Nighttime')) {
+      $amount = 7500;
     }
 
     if ($pax >= 5) {
