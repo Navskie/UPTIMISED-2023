@@ -409,9 +409,19 @@
                   <th class="text-center bg-primary text-white">Account Number</th>
                 </tr>
                 <tr>
-                  <th class="text-center">GCASGH</th>
-                  <th class="text-center">Juan Dela Cruz</th>
-                  <th class="text-center">9827982</th>
+                  <th class="text-center">GCASH</th>
+                  <th class="text-center">MICHELLE COSTALES KIM</th>
+                  <th class="text-center">0968-035-3418</th>
+                </tr>
+                <tr>
+                  <th class="text-center">BPI</th>
+                  <th class="text-center">MICHELLE COSTALES</th>
+                  <th class="text-center">06900 10275</th>
+                </tr>
+                <tr>
+                  <th class="text-center">BPI</th>
+                  <th class="text-center">MICHELLE COSTALES</th>
+                  <th class="text-center">06930 52459</th>
                 </tr>
               </table>
             </div>

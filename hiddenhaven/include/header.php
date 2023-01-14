@@ -27,7 +27,7 @@
             <li><a class="navbar-link" href="aboutus.php">About Us</a></li>
             <li><a class="navbar-link" href="#">Offers</a></li>
             <li><a class="navbar-link" href="#">Gallery</a></li>
-            <li><a class="navbar-link" href="#">Rewards</a></li>
+            <!-- <li><a class="navbar-link" href="#">Rewards</a></li> -->
             <li><a class="navbar-link" href="#">Contact Us</a></li>
             <li><a class="navbar-link" href="../index.php">Uptimised</a></li>
             </ul>
