@@ -44,19 +44,19 @@
 
       $amount = 5200;
 
-    } elseif (($days == 'Weekdays' && $time == 'Full Stay - Daytime')) {
+    } elseif (($days == 'Weekdays' && $time == 'Full Stay - Daytime (9am to 7am)')) {
 
       $amount = 6500;
 
-    } elseif (($days == 'Weekends' && $time == 'Full Stay - Daytime')) {
+    } elseif (($days == 'Weekends' && $time == 'Full Stay - Daytime (9am to 7am)')) {
 
       $amount = 7500;
 
-    } elseif (($days == 'Weekdays' && $time == 'Full Stay - Nighttime')) {
+    } elseif (($days == 'Weekdays' && $time == 'Full Stay - Nighttime (9pm to 7pm)')) {
 
       $amount = 6500;
 
-    } elseif (($days == 'Weekends' && $time == 'Full Stay - Nighttime')) {
+    } elseif (($days == 'Weekends' && $time == 'Full Stay - Nighttime (9pm to 7pm)')) {
 
       $amount = 7500;
 
@@ -126,19 +126,19 @@
 
       $amount = 5200;
 
-    } elseif (($days == 'Weekdays' && $time == 'Full Stay - Daytime')) {
+    } elseif (($days == 'Weekdays' && $time == 'Full Stay - Daytime (9am to 7am)')) {
 
       $amount = 6500;
 
-    } elseif (($days == 'Weekends' && $time == 'Full Stay - Daytime')) {
+    } elseif (($days == 'Weekends' && $time == 'Full Stay - Daytime (9am to 7am)')) {
 
       $amount = 7500;
 
-    } elseif (($days == 'Weekdays' && $time == 'Full Stay - Nighttime')) {
+    } elseif (($days == 'Weekdays' && $time == 'Full Stay - Nighttime (9pm to 7pm)')) {
 
       $amount = 6500;
 
-    } elseif (($days == 'Weekends' && $time == 'Full Stay - Nighttime')) {
+    } elseif (($days == 'Weekends' && $time == 'Full Stay - Nighttime (9pm to 7pm)')) {
 
       $amount = 7500;
 
