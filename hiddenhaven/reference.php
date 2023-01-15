@@ -15,7 +15,7 @@
     <div class="card" style="padding: 60px 40px">
       <h1>Hi <b><?php echo $get_name_fetch['pangalan'] ?></b>,</h1>
       <br><br>
-      <h2>Your booking is now confirmed! For reference, your booking number is</h2>
+      <h2>Your booking is now confirmed! For reference, your booking number is <b><?php echo $id ?></b></h2>
       <br><br>
       <h5>Hidden Haven Villa Resort</h5>
     </div>
