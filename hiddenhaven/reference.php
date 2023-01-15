@@ -13,9 +13,9 @@
 <div class="row">
   <div class="col-6">
     <div class="card" style="padding: 60px 40px">
-      <h1>Hello <b><?php echo $get_name_fetch['pangalan'] ?></b>,</h1>
+      <h1>Hi <b><?php echo $get_name_fetch['pangalan'] ?></b>,</h1>
       <br><br>
-      <h2>here is your reference number at villa, bla blah blah</h2>
+      <h2>Your booking is now confirmed! For reference, your booking number is</h2>
       <br><br>
       <h5>Hidden Haven Villa Resort</h5>
     </div>
