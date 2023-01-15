@@ -11,7 +11,7 @@
 ?>
 <br><br><br>
 <div class="row">
-  <div class="col-12">
+  <div class="col-6">
     <div class="card" style="padding: 60px 40px">
       <h1>Hi <b><?php echo $get_name_fetch['pangalan'] ?></b>,</h1>
       <br><br>
@@ -20,13 +20,13 @@
       <h5>Hidden Haven Villa Resort</h5>
     </div>
   </div>
-  <!-- <div class="col-6">
+  <div class="col-6">
     <div class="card" style="padding: 60px 40px">
       <br><br><br>
-      <h1 class="text-center" style="font-size: 40px"><b><?php //echo $id ?></b></h1>
+      <h1 class="text-center" style="font-size: 40px"><b><?php echo $id ?></b></h1>
       <br><br><br>
     </div>
-  </div> -->
+  </div>
 </div>
 <?php
   unset($_SESSION['poid']);
