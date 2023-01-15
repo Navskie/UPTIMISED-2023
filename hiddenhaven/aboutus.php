@@ -1,11 +1,13 @@
 <?php include 'include/header.php' ?>
   <br><br>
   <div class="row">
-    <div class="col-6">
+    <div class="col-12">
+    <h2>Welcome to Hidden Haven Private Villas</h2>
+    </div>
+    <div class="col-12">
       <img src="../system/admin/images/LUNAWOMES.png" alt="" class="w-100">
     </div>
-    <div class="col-6">
-      <h2>Welcome to Hidden Haven Private Villas</h2>
+    <div class="col-12">
       <br>
       <h3> Set the mood and make yourself at home as Hidden Haven accommodations 
           welcome you home to its inviting private villas . Hidden Haven is a private loft villas 
