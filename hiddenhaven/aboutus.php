@@ -2,13 +2,15 @@
   <br><br>
   <div class="row">
     <div class="col-12">
+      <br><br>
     <h2>Welcome to Hidden Haven Private Villas</h2>
+    <br><br>
     </div>
     <div class="col-12">
       <img src="../system/admin/images/LUNAWOMES.png" alt="" class="w-100">
     </div>
     <div class="col-12">
-      <br>
+      <br><br><br>
       <h3> Set the mood and make yourself at home as Hidden Haven accommodations 
           welcome you home to its inviting private villas . Hidden Haven is a private loft villas 
           that creates an ideal haven for Metro dwellers who desire a quick escape from its 
@@ -28,6 +30,7 @@ have to leave your furry friends behind.</h3>
       <h3> Indeed, Hidden Haven is the perfect place to meet your recreational, social, and 
 business needs. Whether it’s a corporate event, a special occasion, or a week-long 
 vacation, there’s no better place to celebrate than with us.</h3>
+<br><br><br>
     </div>
   </div>
 
