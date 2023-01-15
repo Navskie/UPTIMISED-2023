@@ -2,7 +2,7 @@
   <br><br>
   <div class="row">
     <div class="col-6">
-      <img src="../system/admin/images/about.png" alt="" class="w-100">
+      <img src="../system/admin/images/LUNAWOMES.png" alt="" class="w-100">
     </div>
     <div class="col-6">
       <h2>Welcome to Hidden Haven Private Villas</h2>
