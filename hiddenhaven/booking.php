@@ -19,12 +19,14 @@
 
   $poid = 'HH'.$year.$month.$myID.$count;
 
-  $text1 = date_create('19-01-2023');
-  $text2 = date_create('28-02-2023');
+  // $text1 = date_create('19-01-2023');
+  // $text2 = date_create('28-02-2023');
 
-  $sum = date_diff($text1, $text2);
+  // $sum = date_diff($text1, $text2);
 
-  $result = $sum->format("%a");
+  // $result = $sum->format("%a");
+
+  // echo $_SESSION['diff'];
 
   if ($_SESSION['guest'] == 'Guest') {
     $poid = $_SESSION['poid'];
@@ -131,6 +133,8 @@
           $sum = date_diff($text1, $text2);
 
           $result = $sum->format("%a");
+
+          // $_SESSION['diff'] = $result;
 
           $ok = 0;
           $nessy = 0;
