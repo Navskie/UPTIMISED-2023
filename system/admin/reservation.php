@@ -75,6 +75,7 @@
                                     </td>
                                 </tr>
                               <?php
+                                include 'backend/cancel-on-modal.php';
                                 include 'backend/reserve-on-modal.php';
                                 include 'backend/success-modal.php';
                                 $number++;
