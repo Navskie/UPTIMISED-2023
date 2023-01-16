@@ -60,7 +60,7 @@
                                         if ($status == 'Pending') {
                                       ?>
                                         <button type="button" class="btn btn-sm btn-default waves-effect md-trigger" data-modal="modal-1<?php echo $data['details_ref'] ?>">On Process</button>
-                                        <button class="btn-sm btn btn-danger">Cancel</button>
+                                        <button class="btn-sm btn btn-danger" data-modal="cancel-1<?php echo $data['details_ref'] ?>">Cancel</button>
                                       <?php
                                         } elseif ($status == 'On Process') {
                                       ?>
