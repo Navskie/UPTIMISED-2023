@@ -36,12 +36,11 @@
                                   <th class="text-center">Reservation Date</th>
                                   <th class="text-center">Amount</th>
                                   <th class="text-center">Status</th>
-                                  <th class="text-center">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
                               <?php
-                                $booking_qry = "SELECT * FROM haven_details INNER JOIN haven_booking ON details_ref = booking_ref WHERE booking_status != 'Success' AND booking_status != 'Canceled' ORDER BY booking_date DESC";
+                                $booking_qry = "SELECT * FROM haven_details INNER JOIN haven_booking ON details_ref = booking_ref WHERE booking_status = 'Canceled' ORDER BY booking_date DESC";
                                 $booking = mysqli_query($connect, $booking_qry);
                                 $number = 1;
                                 foreach ($booking as $data) {
@@ -53,29 +52,8 @@
                                     <td class="text-center"><?php echo $data['booking_start'] ?> - <?php echo $data['booking_end'] ?></td>
                                     <td class="text-center"><?php echo $data['details_amount'] ?></td>
                                     <td class="text-center"><?php echo $data['booking_status'] ?></td>
-                                    <td class="text-center">
-                                      <?php
-                                        $status = $data['booking_status'];
-
-                                        if ($status == 'Pending') {
-                                      ?>
-                                        <button type="button" class="btn btn-sm btn-default waves-effect md-trigger" data-modal="modal-1<?php echo $data['details_ref'] ?>">On Process</button>
-                                        <button type="button" class="btn-sm btn btn-danger waves-effect md-trigger" data-modal="cancel-1<?php echo $data['details_ref'] ?>">Cancel</button>
-                                      <?php
-                                        } elseif ($status == 'On Process') {
-                                      ?>
-                                        <button type="button" class="btn btn-success waves-effect md-trigger" data-modal="success-1<?php echo $data['details_ref'] ?>">Success</button>
-                                      <?php
-                                        } elseif ($status == 'Success') {
-                                      ?>
-                                        <span class="badge badge-danger">No Action</span>
-                                      <?php
-                                        }
-                                      ?>
-                                    </td>
                                 </tr>
                               <?php
-                                include 'backend/cancel-on-modal.php';
                                 include 'backend/reserve-on-modal.php';
                                 include 'backend/success-modal.php';
                                 $number++;
