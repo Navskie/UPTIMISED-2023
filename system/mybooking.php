@@ -27,6 +27,7 @@
                                     <th class="text-center">Payment</th>
                                     <th class="text-center">Amount</th>
                                     <th class="text-center">Status</th>
+                                    <th class="text-center">Action</th>
                                   </tr>
                                 </thead>
                                 <?php
@@ -48,9 +49,22 @@
                                   <td class="text-center"><?php echo $order['payment']; ?></td>
                                   <td class="text-center"><?php echo $order['details_amount']; ?></td>
                                   <td class="text-center"><?php echo $order['booking_status']; ?></td>
+                                  <td class="text-center">
+                                    <?php $echo = $order['booking_status']; 
+
+                                      if ($echo == 'Canceled') {
+                                        echo 'Not Available';
+                                      } else {
+                                    ?>
+                                      <button class="btn btn-sm btn-info" data-toggle="modal" data-target="#cancel<?php echo $order['details_ref']; ?>">Cancel</button>
+                                    <?php
+                                      }
+
+                                    ?>
+                                  </td>
                                 </tr>
                                 <?php
-                                    include 'backend/order-cancel-modal.php';
+                                    include 'backend/mybooking-cancel-modal.php';
                                     $number++;
                                     }
                                 ?>
