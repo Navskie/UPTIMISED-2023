@@ -7,13 +7,13 @@
 <div class="page-header">
     <div class="page-header-title">
         <h4>Reservation Page</h4>
-        <span>Manage Pending & On Process Status</span>
+        <!-- <span>Manage Pending & On Process Status</span> -->
     </div>
     <div class="page-header-breadcrumb">
         <ul class="breadcrumb-title">
             <li class="breadcrumb-item">Hidden Haven Resort
             </li>
-            <li class="breadcrumb-item">Reservation Page
+            <li class="breadcrumb-item">Dashboard
             </li>
         </ul>
     </div>

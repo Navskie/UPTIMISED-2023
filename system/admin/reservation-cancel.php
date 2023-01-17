@@ -31,6 +31,7 @@
                             <thead>
                                 <tr>
                                   <th class="text-center">#</th>
+                                  <th class="text-center">Encoded</th>
                                   <th class="text-center">Book Reference</th>
                                   <th class="text-center">Book Date</th>
                                   <th class="text-center">Reservation Date</th>
@@ -44,9 +45,20 @@
                                 $booking = mysqli_query($connect, $booking_qry);
                                 $number = 1;
                                 foreach ($booking as $data) {
+                                  $codeko = $data['details_code'];
+
+                                  $codename_qry = "SELECT * FROM upti_users WHERE users_code = '$codeko'";
+                                  $codename = mysqli_query($connect, $codename_qry);
+                                  $codename_fetch = mysqli_fetch_array($codename);
+                                  if (mysqli_num_rows($codename) > 0) {
+                                    $myName = $codename_fetch['users_name'];
+                                  } else {
+                                    $myName = 'Guest';
+                                  }
                               ?>
                                 <tr>
                                     <td class="text-center"><?php echo $number ?></td>
+                                    <td class="text-center"><?php echo $myName ?></td>
                                     <td class="text-center"><?php echo $data['details_ref'] ?></td>
                                     <td class="text-center"><?php echo $data['booking_date'] ?></td>
                                     <td class="text-center"><?php echo $data['booking_start'] ?> - <?php echo $data['booking_end'] ?></td>
