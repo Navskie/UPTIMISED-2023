@@ -134,7 +134,7 @@
 
           $result = $sum->format("%a");
 
-          echo $_SESSION['diff'] = $result;
+          $_SESSION['diff'] = $result;
 
           $ok = 0;
           $nessy = 0;
