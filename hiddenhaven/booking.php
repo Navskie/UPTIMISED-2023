@@ -134,7 +134,7 @@
 
           $result = $sum->format("%a");
 
-          // $_SESSION['diff'] = $result;
+          echo $_SESSION['diff'] = $result;
 
           $ok = 0;
           $nessy = 0;
@@ -283,16 +283,31 @@
           if (mysqli_num_rows($get_booking_qry) < 1) {
         ?>
           <div class="row">
-            <div class="col-4">
-              <label for="" style="font-size: 15px">Time Slot</label>
-              <select name="timeslot" id="" class="form-control" style="border: 1px solid #000; border-radius: 0; padding: 12px 15px; font-size: 12px">
-                <option value="">Select Time Slot</option>
-                <option value="Sunrise - Daytime (9am to 6pm)">Sunrise - Daytime (9am to 6pm)</option>
-                <option value="Sunset - Nighttime (9pm to 6am)">Sunset - Nighttime (9pm to 6am)</option>
-                <option value="Full Stay - Daytime (9am to 7am)">Full Stay - Daytime (9am to 7am)</option>
-                <option value="Full Stay - Nighttime (9pm to 7pm)">Full Stay - Nighttime (9pm to 7pm)</option>
-              </select>
-            </div>
+            <?php
+              if ($_SESSION['diff'] > 0) {
+            ?>
+              <div class="col-4">
+                <label for="" style="font-size: 15px">Time Slot</label>
+                <select name="timeslot" id="" class="form-control" style="border: 1px solid #000; border-radius: 0; padding: 12px 15px; font-size: 12px">
+                  <option value="">Select Time Slot</option>
+                  <option value="Full Stay - Daytime (9am to 7am)">Full Stay - Daytime (9am to 7am)</option>
+                  <option value="Full Stay - Nighttime (9pm to 7pm)">Full Stay - Nighttime (9pm to 7pm)</option>
+                </select>
+              </div>
+            <?php
+              } else {
+            ?>
+              <div class="col-4">
+                <label for="" style="font-size: 15px">Time Slot</label>
+                <select name="timeslot" id="" class="form-control" style="border: 1px solid #000; border-radius: 0; padding: 12px 15px; font-size: 12px">
+                  <option value="">Select Time Slot</option>
+                  <option value="Sunrise - Daytime (9am to 6pm)">Sunrise - Daytime (9am to 6pm)</option>
+                  <option value="Sunset - Nighttime (9pm to 6am)">Sunset - Nighttime (9pm to 6am)</option>
+                </select>
+              </div>
+            <?php
+              }
+            ?>
             <div class="col-4">
               <label for="" style="font-size: 15px">Days</label>
               <select name="days" id="" class="form-control" style="border: 1px solid #000; border-radius: 0; padding: 12px 15px; font-size: 12px">
@@ -329,11 +344,31 @@
             <div class="col-4">
               <label for="" style="font-size: 15px">Time Slot</label>
               <select name="timeslot" id="" class="form-control" style="border: 1px solid #000; border-radius: 0; padding: 12px 15px; font-size: 12px">
-                <option value="<?php echo $booking_fetch['details_time'] ?>"><?php echo $booking_fetch['details_time'] ?></option>
-                <option value="Sunrise - Daytime (9am to 6pm)">Sunrise - Daytime (9am to 6pm)</option>
-                <option value="Sunset - Nighttime (9pm to 6am)">Sunset - Nighttime (9pm to 6am)</option>
-                <option value="Full Stay - Daytime (9am to 7am)">Full Stay - Daytime (9am to 7am)</option>
-                <option value="Full Stay - Nighttime (9pm to 7pm)">Full Stay - Nighttime (9pm to 7pm)</option>
+                <?php
+                  if ($_SESSION['diff'] > 0) {
+                ?>
+                  <div class="col-4">
+                    <label for="" style="font-size: 15px">Time Slot</label>
+                    <select name="timeslot" id="" class="form-control" style="border: 1px solid #000; border-radius: 0; padding: 12px 15px; font-size: 12px">
+                    <option value="<?php echo $booking_fetch['details_time'] ?>"><?php echo $booking_fetch['details_time'] ?></option>
+                      <option value="Full Stay - Daytime (9am to 7am)">Full Stay - Daytime (9am to 7am)</option>
+                      <option value="Full Stay - Nighttime (9pm to 7pm)">Full Stay - Nighttime (9pm to 7pm)</option>
+                    </select>
+                  </div>
+                <?php
+                  } else {
+                ?>
+                  <div class="col-4">
+                    <label for="" style="font-size: 15px">Time Slot</label>
+                    <select name="timeslot" id="" class="form-control" style="border: 1px solid #000; border-radius: 0; padding: 12px 15px; font-size: 12px">
+                      <option value="<?php echo $booking_fetch['details_time'] ?>"><?php echo $booking_fetch['details_time'] ?></option>
+                      <option value="Sunrise - Daytime (9am to 6pm)">Sunrise - Daytime (9am to 6pm)</option>
+                      <option value="Sunset - Nighttime (9pm to 6am)">Sunset - Nighttime (9pm to 6am)</option>
+                    </select>
+                  </div>
+                <?php
+                  }
+                ?>
               </select>
             </div>
             <div class="col-4">

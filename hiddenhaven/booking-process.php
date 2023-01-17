@@ -26,38 +26,37 @@
     $days = $_POST['days'];
     // echo '<br>';
     $contact = $_POST['contact'];
-
     
     if ($days == 'Weekdays' && $time == 'Sunrise - Daytime (9am to 6pm)') {
-
-      $amount = 4200;
+      $diff_date = $_SESSION['diff'] + 1;
+      $amount = 4200 * $diff_date;
 
     } elseif (($days == 'Weekends' && $time == 'Sunrise - Daytime (9am to 6pm)')) {
-
-      $amount = 4700;
+      $diff_date = $_SESSION['diff'] + 1;
+      $amount = 47000 * $diff_date;
 
     } elseif (($days == 'Weekdays' && $time == 'Sunset - Nighttime (9pm to 6am)')) {
-
-      $amount = 4700;
+      $diff_date = $_SESSION['diff'] + 1;
+      $amount = 47000 * $diff_date;
 
     } elseif (($days == 'Weekends' && $time == 'Sunset - Nighttime (9pm to 6am)')) {
-
-      $amount = 5200;
+      $diff_date = $_SESSION['diff'] + 1;
+      $amount = 52000 * $diff_date;
 
     } elseif (($days == 'Weekdays' && $time == 'Full Stay - Daytime (9am to 7am)')) {
-
+      $diff_date = $_SESSION['diff'];
       $amount = 6500;
 
     } elseif (($days == 'Weekends' && $time == 'Full Stay - Daytime (9am to 7am)')) {
-
+      $diff_date = $_SESSION['diff'];
       $amount = 7500;
 
     } elseif (($days == 'Weekdays' && $time == 'Full Stay - Nighttime (9pm to 7pm)')) {
-
+      $diff_date = $_SESSION['diff'];
       $amount = 6500;
 
     } elseif (($days == 'Weekends' && $time == 'Full Stay - Nighttime (9pm to 7pm)')) {
-
+      $diff_date = $_SESSION['diff'];
       $amount = 7500;
 
     }
