@@ -341,7 +341,6 @@
           } else {
         ?>
           <div class="row">
-            <div class="col-4">
                 <?php
                   if ($_SESSION['diff'] > 0) {
                 ?>
@@ -367,7 +366,6 @@
                 <?php
                   }
                 ?>
-            </div>
             <div class="col-4">
               <label for="" style="font-size: 15px">Days</label>
               <select name="days" id="" class="form-control" style="border: 1px solid #000; border-radius: 0; padding: 12px 15px; font-size: 12px">
