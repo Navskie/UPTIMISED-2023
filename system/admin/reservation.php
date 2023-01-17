@@ -50,7 +50,7 @@
 
                                   $codename = mysqli_query($connect, "SELECT * FROM upti_users WHERE users_code = '$codeko'");
                                   if (mysqli_num_rows($codename) > 0) {
-                                    $myName = $codename_fetch['users_name']
+                                    $myName = $codename_fetch['users_name'];
                                   } else {
                                     $myName = 'Guest';
                                   }
