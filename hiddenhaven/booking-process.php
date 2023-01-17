@@ -234,8 +234,10 @@
 
     unset($_SESSION['date1banene']);
     unset($_SESSION['date2banene']);
+    unset($_SESSION['diff']);
     $_SESSION['date1banene'] = '';
     $_SESSION['date2banene'] = '';
+    $_SESSION['diff'] = '';
 
     if  ($_SESSION['guest'] != 'Guest') {
 
