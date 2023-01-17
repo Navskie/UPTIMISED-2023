@@ -48,7 +48,8 @@
                                 foreach ($booking as $data) {
                                   $codeko = $data['details_code'];
 
-                                  echo $codename = mysqli_query($connect, "SELECT * FROM upti_users WHERE users_code = '$codeko'");
+                                  echo $codename_qry = "SELECT * FROM upti_users WHERE users_code = '$codeko'";
+                                  $codename = mysqli_query($connect, $codename_qry);
                                   if (mysqli_num_rows($codename) > 0) {
                                     $myName = $codename_fetch['users_name'];
                                   } else {
