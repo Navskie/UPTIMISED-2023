@@ -41,17 +41,17 @@
   //   echo "false";
   // }
 
-  $sql = mysqli_query($connect, "SELECT reseller_osr, reseller_code, trans_seller, reseller_poid, trans_poid FROM upti_reseller INNER JOIN upti_transaction ON trans_poid = reseller_poid");
+  // $sql = mysqli_query($connect, "SELECT reseller_osr, reseller_code, trans_seller, reseller_poid, trans_poid FROM upti_reseller INNER JOIN upti_transaction ON trans_poid = reseller_poid");
 
-  foreach ($sql as $data_sql) {
-    $reseller_osr = $data_sql['trans_seller'];
-    $reseller_paid = $data_sql['reseller_poid'];
-    $reseller_code = $data_sql['reseller_code'];
+  // foreach ($sql as $data_sql) {
+  //   $reseller_osr = $data_sql['trans_seller'];
+  //   $reseller_paid = $data_sql['reseller_poid'];
+  //   $reseller_code = $data_sql['reseller_code'];
 
-    $update_sql = mysqli_query($connect, "UPDATE upti_reseller SET reseller_osr = '$reseller_osr' WHERE reseller_poid = '$reseller_paid'");
+  //   $update_sql = mysqli_query($connect, "UPDATE upti_reseller SET reseller_osr = '$reseller_osr' WHERE reseller_poid = '$reseller_paid'");
 
-    $update_users = mysqli_query($connect, "UPDATE upti_users SET users_inviter = '$reseller_osr' WHERE users_code = '$reseller_code'");
-  }
+  //   $update_users = mysqli_query($connect, "UPDATE upti_users SET users_inviter = '$reseller_osr' WHERE users_code = '$reseller_code'");
+  // }
 
   // $test_update_sql = mysqli_query($connect, "SELECT * FROM upti_transaction WHERE trans_status = 'Pending' AND trans_mop != 'Cash on Pick Up'");
   // while ($test_fetch = mysqli_fetch_array($test_update_sql)) {
