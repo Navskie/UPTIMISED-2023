@@ -342,8 +342,6 @@
         ?>
           <div class="row">
             <div class="col-4">
-              <label for="" style="font-size: 15px">Time Slot</label>
-              <select name="timeslot" id="" class="form-control" style="border: 1px solid #000; border-radius: 0; padding: 12px 15px; font-size: 12px">
                 <?php
                   if ($_SESSION['diff'] > 0) {
                 ?>
@@ -369,7 +367,6 @@
                 <?php
                   }
                 ?>
-              </select>
             </div>
             <div class="col-4">
               <label for="" style="font-size: 15px">Days</label>
