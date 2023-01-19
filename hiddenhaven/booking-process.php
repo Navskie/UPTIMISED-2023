@@ -241,7 +241,7 @@
 
     if  ($_SESSION['guest'] != 'Guest') {
 
-    echo '<script>alert("Booking Successfully Please check on your dashboard");window.location.href = "../system/mybooking.php";</script>';
+    echo '<script>alert("Booking Successful! Please find the booking details in your dashboard.");window.location.href = "../system/mybooking.php";</script>';
 
     } else {
 
