@@ -44,26 +44,26 @@
       $amount = 52000 * $diff_date;
 
     } elseif (($days == 'Weekdays' && $time == 'Full Stay - Daytime (9am to 7am)')) {
-      $diff_date = $_SESSION['diff'];
+      $diff_date = $_SESSION['diff'] + 1;
       $amount = 6500 * $diff_date;
 
     } elseif (($days == 'Weekends' && $time == 'Full Stay - Daytime (9am to 7am)')) {
-      $diff_date = $_SESSION['diff'];
+      $diff_date = $_SESSION['diff'] + 1;
       $amount = 7500 * $diff_date;
 
     } elseif (($days == 'Weekdays' && $time == 'Full Stay - Nighttime (9pm to 7pm)')) {
-      $diff_date = $_SESSION['diff'];
+      $diff_date = $_SESSION['diff'] + 1;
       $amount = 6500 * $diff_date;
 
     } elseif (($days == 'Weekends' && $time == 'Full Stay - Nighttime (9pm to 7pm)')) {
-      $diff_date = $_SESSION['diff'];
+      $diff_date = $_SESSION['diff'] + 1;
       $amount = 7500 * $diff_date;
 
     }
 
     if ($pax >= 5) {
       $sobra = $pax - 4;
-      $subtotal = $sobra * 300;
+      $subtotal = $sobra * 300 * $diff_date;
       $amount = $amount + $subtotal;
     }
 
@@ -126,19 +126,19 @@
       $amount = 52000 * $diff_date;
 
     } elseif (($days == 'Weekdays' && $time == 'Full Stay - Daytime (9am to 7am)')) {
-      $diff_date = $_SESSION['diff'];
+      $diff_date = $_SESSION['diff'] + 1;
       $amount = 6500 * $diff_date;
 
     } elseif (($days == 'Weekends' && $time == 'Full Stay - Daytime (9am to 7am)')) {
-      $diff_date = $_SESSION['diff'];
+      $diff_date = $_SESSION['diff'] + 1;
       $amount = 7500 * $diff_date;
 
     } elseif (($days == 'Weekdays' && $time == 'Full Stay - Nighttime (9pm to 7pm)')) {
-      $diff_date = $_SESSION['diff'];
+      $diff_date = $_SESSION['diff'] + 1;
       $amount = 6500 * $diff_date;
 
     } elseif (($days == 'Weekends' && $time == 'Full Stay - Nighttime (9pm to 7pm)')) {
-      $diff_date = $_SESSION['diff'];
+      $diff_date = $_SESSION['diff'] + 1;
       $amount = 7500 * $diff_date;
 
     }

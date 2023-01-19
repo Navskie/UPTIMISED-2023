@@ -33,7 +33,7 @@
                                 <?php
                                   $mycode = $_SESSION['code'];
                     
-                                  $order_sql = "SELECT * FROM upti_transaction WHERE trans_seller = '$mycode' ORDER BY trans_date DESC";
+                                  $order_sql = "SELECT * FROM upti_transaction WHERE trans_seller = '$mycode' ORDER BY id DESC";
                                   $order_qry = mysqli_query($connect, $order_sql);
                                   $number =1;
                                   while ($order = mysqli_fetch_array($order_qry)) {
