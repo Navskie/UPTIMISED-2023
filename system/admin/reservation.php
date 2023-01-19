@@ -61,7 +61,10 @@
                                 <tr>
                                     <td class="text-center"><?php echo $number ?></td>
                                     <td class="text-center"><?php echo $myName ?></td>
-                                    <td class="text-center"><?php echo $data['details_ref'] ?></td>
+                                  <td class="text-center"><button class="btn  waves-effect btn-success btn-sm md-trigger" data-modal="view-1<?php echo $data['details_ref'] ?>">
+                                    <?php echo $data['details_ref'] ?>
+                                    </button>
+                                  </td>
                                     <td class="text-center"><?php echo $data['booking_date'] ?></td>
                                     <td class="text-center"><?php echo $data['booking_start'] ?> - <?php echo $data['booking_end'] ?></td>
                                     <td class="text-center"><?php echo $data['details_amount'] ?></td>
@@ -88,6 +91,7 @@
                                     </td>
                                 </tr>
                               <?php
+                                include 'backend/view-on-modal.php';
                                 include 'backend/cancel-on-modal.php';
                                 include 'backend/reserve-on-modal.php';
                                 include 'backend/success-modal.php';
