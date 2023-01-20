@@ -641,7 +641,7 @@
                                     <!-- Payment Method Start -->
                                     <div class="col-lg-12 col-md-12 col-sm-12">
                                         <h6><i class="text-danger">(Select Payment Method to Enable CHECKOUT)</i></h6>
-                                        <form action="order-payment.php" method="post">
+                                        <!-- <form action="order-payment.php" method="post">
                                         <div class="row">
                                             <div class="col-6">
                                                 <div class="form-group">
@@ -649,7 +649,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        </form>
+                                        </form> -->
                                         <?php if ($office_state != 'ALBERTA') { ?>
                                         <div class="form-group">
                                             <button type="submit" class="form-control btn btn-info" style="border-radius: 0 !important"  data-target="#canada<?php echo $get_transaction_fetch['trans_poid']; ?>" data-toggle="modal">Payments First</button>
