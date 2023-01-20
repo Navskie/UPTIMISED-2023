@@ -301,12 +301,22 @@
                         <option value="Bank">Bank</option>
                       </select>
                     </div>
+                    <?php } elseif ($country == 'CANADA') { ?>
+                    <div class="col-sm-12 col-md-12 col-lg-9">
+                      <form action="payment-method.php?mop=<?php echo $poid ?>" method="post">
+                      <select class="form-control select2bs4" style="width: 100%;" name="mod">
+                        <option value="<?php echo $mode_of_payment ?>"><?php echo $mode_of_payment ?></option>
+                        <!-- <option value="Cash On Pick Up">Cash On Pick Up</option> -->
+                        <option value="Payment First">Payment First</option>
+                        <option value="Bank">Bank</option>
+                      </select>
+                    </div>
                     <?php } else { ?>
                     <div class="col-sm-12 col-md-12 col-lg-9">
                       <form action="payment-method.php?mop=<?php echo $poid ?>" method="post">
                       <select class="form-control select2bs4" style="width: 100%;" name="mod">
                         <option value="<?php echo $mode_of_payment ?>"><?php echo $mode_of_payment ?></option>
-                        <option value="Cash On Pick Up">Cash On Pick Up</option>
+                        <!-- <option value="Cash On Pick Up">Cash On Pick Up</option> -->
                         <option value="Payment First">Payment First</option>
                         <option value="Bank">Bank</option>
                       </select>
